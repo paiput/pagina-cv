@@ -1,0 +1,15 @@
+{
+  "name": "desarrollo-sistemas",
+  "version": "1.0.0",
+  "description": "Página web de currículum personal",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./styles/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Lucas Piputto",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
