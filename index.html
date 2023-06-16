@@ -33,7 +33,7 @@
     </div>
   </header>
   <main class="mx-4 md:mx-[15vw]">
-    <section class="md:h-[calc(100vh-90px)] md:flex justify-center items-center">
+    <section class=" md:h-[calc(100vh-90px)] flex flex-col md:flex-row justify-center items-center">
       <div>
         <h1 class="relative text-xl md:text-2xl">
           <span class="block">👋 Hola, soy</span> 
@@ -49,8 +49,8 @@
       </div>
     </section>
     <section id="sobremi" class="mb-32">
-      <h2 class="text-xl font-bold">Sobre mí</h2>
-      <div class="my-4 space-y-2 md:flex md:items-center md:space-y-0">
+      <h2 class="text-xl font-bold text-center md:text-left">Sobre mí</h2>
+      <div class="my-4 flex flex-col items-center gap-8 md:flex-row md:items-center md:space-y-0">
         <div class="max-w-xs">
           <img src="/public/images/3d-developer-illustration-2.webp" alt="Developer illustration" class="w-full" />
         </div>
@@ -75,14 +75,14 @@
         </div>
       </div>
     </section>
-    <section id="proyectos" class="mb-16">
+    <section id="proyectos" class="mb-16 text-center md:text-left">
       <h2 class="text-xl font-bold mb-8 my-16">Proyectos</h2>
       <div class="relative">
         <button type="button" name="button-left" class="CAROUSEL_BUTTON absolute border rounded-full h-8 w-8 top-1/2 -translate-y-1/2 transition-transform hover:-translate-y-[55%] active:opacity-80">
           <img src="/public/icons/caret-left.svg" />
         </button>
-        <div id="projects-carousel" class="w-[calc(288px*3+16px*2)] mx-auto py-8 overflow-hidden">
-          <div id="projects-container" class="flex gap-4 transition-all duration-500 ease-in-out"></div>
+        <div id="projects-carousel" class="w-[304px] lg:w-[calc(288px*3+16px*2)] mx-auto py-8 overflow-hidden">
+          <div id="projects-container" class="flex gap-4 transition-all duration-500 ease-in-out lg:HIGHLIGHTER"></div>
         </div>
         <button type="button" name="button-right" class="CAROUSEL_BUTTON absolute border rounded-full h-8 w-8 top-1/2 right-0 -translate-y-1/2 transition-transform hover:-translate-y-[55%] active:opacity-80">
           <img src="/public/icons/caret-right.svg" />
